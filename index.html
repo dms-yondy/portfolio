@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Jost:wght@200&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/yondyLogo.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction-->
+        <section class="intro" id="home">
+                <div class="fade-in">
+                <h1 class="section__title section__title--intro fade-in">
+                    Hi, I am <strong section__title--intro__name>Rory</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Programmer and Tech Enthusiast</p>
+                </div>
+        </section>
+
+           <!--About Me-->
+           <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about">Always Leaning. Always Improving.  Always Coding.</p>
+
+            <div class="about-me__body">
+                <p>Hi, my name is Rory and I am on a quest to become the best software engineer possible. In June 2020 I graduated from the University of Manchester with a 1st class Meng in Chemical Engineering. During my time at university I started to learn code as a hobby in my spare time. The more I learnt about computer science and technology the more fascinated I became. The sense of achievement and enjoyment I got from learning a new technology or algorithm to solving coding challenges on Hakerrank or Codeforce was so unique. </p>
+                <p>While finding the time to learn and improve my coding skills was not always easy while studying a demanding degree like chemical engineering, I always ending up come back to pick up where I left off in my coding journey to improve existing skills and learn new ones. 
+                </p>
+                <p>During my final summer at university I had the opportunity to go and work in the IT department of BMW Group UK. While there I was able to develop applications and websites for the business. While receiving positive feedback for my work, I was able to learn and develop, so much from the programmers and software engineers there, for example I learnt a great deal about the role of testing in software engineer and how it is implemented into projects. I was also introduced to working in an Agile environment.
+                </p>
+                <p>Having finished university my ambition now is to find work in the tech industry as a software engineer. Every day I strive to learn more and improve, weather that is by learning new technologies, contributing to open source projects or working on my own projects, I see every day as an opportunity to learn, get better and achieve my dream career.</p>
+            </div>
+            <img src="img/profile_pic.JPG" alt="" class="about-me__img">
+        </section>
+
+        <!--What I do-->
+        <section class="my-services" id="services">
+            <h2 class="section__title--services">My Interests</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis bibendum tortor, non fermentum lorem porttitor non. Etiam faucibus rhoncus nulla, et congue ex consequat a. Suspendisse vel dictum enim, egestas sollicitudin enim. Maecenas vestibulum ipsum eget libero efficitur, et cursus eros fringilla. Donec at tellus in velit fringilla ultrices at vitae est. Ut aliquet velit semper, cursus felis id, luctus elit. Curabitur scelerisque ante quam, nec efficitur lacus maximus ut. Vivamus pretium eros sed vestibulum consectetur.</p>
+                </div>
+                <div class="service">
+                    <h3>Distributed Systems</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis bibendum tortor, non fermentum lorem porttitor non. Etiam faucibus rhoncus nulla, et congue ex consequat a. Suspendisse vel dictum enim, egestas sollicitudin enim. Maecenas vestibulum ipsum eget libero efficitur, et cursus eros fringilla. Donec at tellus in velit fringilla ultrices at vitae est. Ut aliquet velit semper, cursus felis id, luctus elit. Curabitur scelerisque ante quam, nec efficitur lacus maximus ut. Vivamus pretium eros sed vestibulum consectetur. </p>
+                </div>
+                <div class="service">
+                    <h3>Neque porro</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis bibendum tortor, non fermentum lorem porttitor non. Etiam faucibus rhoncus nulla, et congue ex consequat a. Suspendisse vel dictum enim, egestas sollicitudin enim. Maecenas vestibulum ipsum eget libero efficitur, et cursus eros fringilla. Donec at tellus in velit fringilla ultrices at vitae est. Ut aliquet velit semper, cursus felis id, luctus elit. Curabitur scelerisque ante quam, nec efficitur lacus maximus ut. Vivamus pretium eros sed vestibulum consectetur. </p>
+                </div>
+            </div>
+            <a href="#work" class="btn">See My Projects</a>
+        </section>
+
+     
+
+        <!--My Work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Projects</h2>
+            <p class="section__subtitle section__subtitle--work">Here are some of the examples of the projects that I have worked on</p>
+            <div class="section__carousel">
+                <button class="section__carousel__button section__carousel__button--left is__hidden">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="section__carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current__slide">
+                            <a href="./project-items/portfolio-item.html">
+                                <img class="carousel__image" src="img/guessTheFlagScreenshot.png" alt="">
+                            </a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a href="example.html">
+                                <img class="carousel__image" src="img/pexels-lukas-kloeppel-466685.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a href="example.html">
+                                <img class="carousel__image" src="img/pexels-lukas-kloeppel-466685.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="section__carousel__button section__carousel__button--right">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current__slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer" id="contact">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/dms-yondy">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/yondy">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/rory-price-92038a188/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="mailto:rprice1858@gmail.com" class="footer__link">Email: rprice1858@gmail.com</a>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="js/carousel.js"></script>
+    </body>
+</html>
