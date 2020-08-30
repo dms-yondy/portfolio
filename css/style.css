@@ -166,6 +166,10 @@ h3 { font-size: var(--fs-h3);}
     margin-bottom: 1em;
 }
 
+.section__subtitle--work a {
+    text-decoration: none;
+}
+
 .section__title {
     color: var(--clr-accent);
 }
@@ -450,7 +454,7 @@ header {
 .section__carousel {
     position: relative;
     height: 20em;
-    width: 50%;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -470,10 +474,8 @@ header {
 }
 
 .carousel__image {
-    width: 100%;
+    width: 600px;
     height: 100%;
-    max-width: 30em;
-    max-height: 40em;
     margin-left: auto;
     margin-right: auto;
     border: solid 2px var(--clr-dark);
@@ -527,6 +529,15 @@ header {
     opacity: 1;
 }
 
+.carousel__slide__container {
+    position: relative
+}
+
+.carousel__slide__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .is__hidden {
     display: none;
 }
@@ -586,7 +597,8 @@ header {
     grid-row: 100px auto auto;
     grid-column: 80px auto;
     grid-column-gap: 2em;
-    margin-top: 2em;
+    margin-top: 4em;
+    justify-content: space-around;
 }
 .section__project--tile {
     margin-top: 0;
@@ -599,6 +611,7 @@ header {
     grid-row: 1;
     grid-column: 1;
     margin-top: 0;
+    max-width: 500px;
 }
 
 
@@ -623,8 +636,7 @@ header {
 .project__body__image {
     grid-row: 1 / 4;
     grid-column: 2;
-    margin-top: 3em;
-    border: solid 0.1em var(--clr-accent);
+    max-width: 600px;
 
 }
 
