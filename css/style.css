@@ -97,8 +97,8 @@ img {
 strong {font-weight: bold;}
 
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline: 2px solid var(--clr-accent);
+    outline-offset: 2px;
 }
 
 /* Buttons */
@@ -163,7 +163,7 @@ h3 { font-size: var(--fs-h3);}
 .section__subtitle--work {
     color: var(--clr-dark);
     font-weight: var(--clr-dark);
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .section__subtitle--work a {
@@ -381,6 +381,10 @@ header {
     margin: 0 auto;
 }
 
+.service p {
+    text-align: center;
+}
+
 @media (min-width: 800px) {
     .services {
         display: flex;
@@ -394,8 +398,13 @@ header {
     }
 
     .services {
-        max-width: 1000px;
+        min-width: 1000px;
     }
+    .service {
+        width: 300px;
+        margin: 0 auto;
+    }
+
 }
 
 /* About Me */
@@ -475,11 +484,11 @@ header {
 
 .carousel__image {
     width: 600px;
-    height: 100%;
+    height: 300px;
+    margin-top: 0.2em;
     margin-left: auto;
     margin-right: auto;
     border: solid 2px var(--clr-dark);
-    object-fit: cover;
 }
 
 .carousel__slide {
@@ -541,6 +550,8 @@ header {
 .is__hidden {
     display: none;
 }
+
+
 /* Footer */
 
 .footer {
@@ -637,6 +648,7 @@ header {
     grid-row: 1 / 4;
     grid-column: 2;
     max-width: 600px;
+    border: solid 2px var(--clr-dark);
 
 }
 
